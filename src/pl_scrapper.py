@@ -56,7 +56,7 @@ def reformat_df(pl):
             else:
                 raise e
         finally:
-            pl[col] = pl[col].astype(np.float32)
+            pl[col] = pl[col].astype(np.float32) * 1000
     return pl
 
 
